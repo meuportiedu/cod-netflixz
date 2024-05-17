@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<!-- Mirrored from fcaspirro.github.io/clone-netflix/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 May 2024 03:39:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Netflix clone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="package/css/swiper.min.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/scripts.html">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="nav" id="nav">
+                <img src="assets/images/netflix-logo.png" class="nav-logo" alt="Logo Netflix">
+                <div class="first-nav" id="first-nav">
+                        <li class="navigation-menu">
+                            <a class="menu-arrow" role="button" >Navegar</a>
+                        </li>          
+                    <ul class="nav-list" id="navBar">
+                        <li><a href="#"><b>Início</b></a></li>
+                        <li><a href="#series">Séries</a></li>
+                        <li><a href="#movies">Filmes</a></li>
+                        <li><a href="#only-netflix">Só na Netflix</a></li>
+                        <li><a href="#animes">Animes</a></li>
+                    </ul>
+                </div>
+                <div class="second-nav" id="second-nav">
+                    <div class="searchBox">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="search-icon"><a href="#"></a>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13 11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11C3 8.23858 5.23858 6 8 6C10.7614 6 13 8.23858 13 11ZM14.0425 16.2431C12.5758 17.932 10.4126 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183 3 16 6.58172 16 11C16 11.9287 15.8417 12.8205 15.5507 13.6497L24.2533 18.7028L22.7468 21.2972L14.0425 16.2431Z"
+                                fill="currentcolor">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="kids">
+                        <a href="#kids">Infantil</a>
+                    </div>
+                    <div class="notification">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="notification-icon"><a href="#"></a>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13 4.57092C16.3922 5.05624 18.9998 7.9736 18.9998 11.5V15.2538C20.0486 15.3307 21.0848 15.4245 22.107 15.5347L21.8926 17.5232C18.7219 17.1813 15.409 17 11.9998 17C8.59056 17 5.27764 17.1813 2.10699 17.5232L1.89258 15.5347C2.91473 15.4245 3.95095 15.3307 4.99978 15.2538V11.5C4.99978 7.97345 7.6076 5.05599 11 4.57086V2H13V4.57092ZM8.62568 19.3712C8.6621 20.5173 10.1509 22 11.9993 22C13.8477 22 15.3365 20.5173 15.373 19.3712C15.38 19.1489 15.1756 19 14.9531 19H9.04555C8.82308 19 8.61862 19.1489 8.62568 19.3712Z"
+                                fill="currentColor">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="avatar">
+                        <img src="assets/images/netflix-avatar.png" class="nav-avatar" alt="Avatar padrão" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-main">
+            <div class="banner">
+                <div class="banner-contents">
+                    <h1 class="banner-title">THE SANDMAN</h1>
+                    <div class="banner-buttons">
+                        <div class="play button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-play">
+                                <path
+                                    d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                            <button class="banner-button p">Assistir</button>
+                        </div>
+                        <div class="more-informations button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-more-informations">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                            <button class="banner-button mi">Mais informações</button>
+                        </div>
+                    </div>
+                    <div class="banner-description">
+                        <p>A história começa quando uma seita prende o perpétuo Sonho, conhecido como Morfeu,
+                            colocando-o em uma jornada para restabelecer seus poderes e restabelecer o Mundo dos Sonhos...
+                        </p>
+                    </div>
+                </div>
+                <div class="banner--fadeBottom"></div>
+            </div>
+        </div>
+    </main>
+    <section class="slider-movies">
+        <div class="netflix-slider series">
+            <h2 id="series">Séries</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/row-theendofthefxxxingworld.jpg" class="img" alt="The End of the F***ing World"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-peakyblinders.jpg" class="img"alt="Peaky Blinders"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-ozark.jpg" class="img" alt="Ozark"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-bettercallsaul.jpg" class="img" alt="Better Call Saul"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-blacklist.jpg" class="img" alt="Black List"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-thewalkingdead.jpg" class="img" alt="The Walking Dead"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-blindspot.jpg" class="img" alt="Blindspot"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-breakingbad.jpg" class="img" alt="Breaking Bad"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-brooklynninenine.jpg" class="img" alt="Brooklyn Nine Nine"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-strangerthings.png" class="img" alt="Stranger Things"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-visavis.jpg" class="img" alt="Vis a Vis"></div>
+                    <div class="swiper-slide"><img src="assets/images/row-the100.jpg" class="img" alt="The 100"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="netflix-slider movies">
+            <h2 id="movies">Filmes</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/undrow-agenteoculto.png" class="under-img" alt="Agente Oculto"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-1917.png" class="under-img"alt="1917"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-topgun_asesindomaveis.png" class="under-img" alt="Top Gun - Ases Indomáveis"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-johnwick2.png" class="under-img" alt="John Wick 2: Um Novo Dia Para Matar"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-ocontador.png" class="under-img" alt="O Contador"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-ilhadomedo.png" class="under-img" alt="Ilha do Medo"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-sresra_smith.png" class="under-img" alt="Sr. e Sra. Smith"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-emritmodefuga.png" class="under-img" alt="Em Ritmo de Fuga"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-shrek.png" class="under-img" alt="Shrek"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-forrestgump.png" class="under-img" alt="Forrest Gump"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-oregresso.png" class="under-img" alt="O Regresso"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-bladerunner_2049.png" class="under-img" alt="Blade Runner 2049"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="netflix-slider onlyNetflix">
+            <h2 id="only-netflix">Só na Netflix</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/undrow-annewithane.png" class="under-img" alt="Anne with An E"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-elite.png" class="under-img" alt="Elite"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-enolaholmes.png" class="under-img" alt="Enola Holmes"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-lockeandkey.png" class="under-img" alt="Locke & Key"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-narcos.png"  class= "under-img" alt="Narcos"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-ogambitodarainha.png" class="under-img" alt="O Gambito da Rainha"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-sexeducation.png" class="under-img" alt="Sex Education"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-outerbanks.png" class="under-img" alt="Outer Banks"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-thewitcher.png" class="under-img" alt="The Witcher"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-vikings.png" class="under-img" alt="Vikings"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-dark.png" class="under-img" alt="Dark"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-vanhelsing.png" class="under-img" alt="Van Helsing"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="netflix-slider animes">
+            <h2 id="animes">Animes</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/undrow-baki.png" class="under-img" alt="Baki"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-thesevendeadlysins_ojulgamentododrag%c3%a3o.png" class="under-img" alt="The Seven Deadly Sins - O Julgamento do Dragão"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-bleach.png" class="under-img" alt="Bleach"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-castlevania.png" class="under-img" alt="Castlevania"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-deathnote.png" class="under-img" alt="Death Note"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-hellsing.png" class="under-img" alt="Hellsing"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-onepiece.png" class="under-img" alt="One Piece"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-demonslayer.png" class="under-img" alt="Demon Slayer"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-onepunchman.png" class="under-img" alt="One Punch Man"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-swordartonline.png" class="under-img" alt="Sword Art Online"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-pokemonjornadas.png" class="under-img" alt="Pokemons Jornadas"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-narutoshippuden.png" class="under-img" alt="Naruto Shippuden"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="netflix-slider kids">
+            <h2 id="kids">Infantil</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/undrow-yu-gi-oh.png" class="under-img" alt="Yu-Gi-Oh!"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-angrybirds.png" class="under-img" alt="Angry Birds"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-barbie_escoladeprincesas.png" class="under-img" alt="Barbie Escola de Princesas"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-bobesponja.png" class="under-img" alt="Bob Esponja"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-karatekid.png" class="under-img" alt="Karatê Kid"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-kungfupanda.png" class="under-img" alt="Kung Fu Panda"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-carrosel.png" class="under-img" alt="Carrosel"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-luccasnetoem_acampamentodeferias2.png" class="under-img" alt="Luccas Neto em Acampamento de Férias 2"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-ossmurfs.png" class="under-img" alt="Os Smurfs"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-aferadomar.png" class="under-img" alt="A fera do Mar"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-tachovendohamburguer.png" class="under-img" alt="Tá Chovendo Hambúrguer"></div>
+                    <div class="swiper-slide"><img src="assets/images/undrow-madasgascar3_osprocurados.png" class="under-img" alt="Madagascar 3 - Os Procurados"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer-links"> 
+            <div class="social-link">
+                <div class="logos">
+                    <div class="facebook">
+                        <svg width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+                            <a href="#" class="icon facebook"></a>
+                        </svg>
+                    </div>
+                    <div class="instagram">
+                        <svg width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                            <a href="#" class="icon instagram"></a>
+                        </svg>
+                    </div>
+                    <div class="twitter">
+                        <svg width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
+                            <a href="#" class="icon twitter"></a>    
+                        </svg>
+                    </div>
+                    <div class="youtube">
+                        <svg width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" />
+                            <a href="#" class="icon youtube"></a>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-subLinks">
+            <div class="first column">
+                <ul>
+                    <li><a href="#">Audiodescrição</a></li>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Cartão pré-pago</a></li>
+                    
+                </ul>
+            </div>
+            <div class="second column">
+                <ul>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Relação com investidores</a></li>
+                    <li><a href="#">Carreiras</a></li>
+
+                </ul>     
+            </div>
+            <div class="third column">
+                <ul>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Aviso legais</a></li>
+                </ul>
+            </div>
+            <div class="fourth column">
+                <ul>
+                    <li><a href="#">Preferência de cookies</a></li>
+                    <li><a href="#">Informações corporativas</a></li>
+                    <li><a href="#">Entre em contato</a></li>
+                </ul>
+            </div>    
+        </section>
+        <section class="footer-service">
+            <button class="service-code"> <a href="#">Código do serviço</a></button>
+        </section>
+        <section class="footer-copyright">
+            <p>© 1997- 
+                <script>
+                    document.write( new Date().getFullYear() );
+                </script> 
+                Netflix, Inc. &nbsp;&nbsp;
+            </p>
+            <p>Fabio Caspirro © 
+                <script>
+                    document.write( new Date().getFullYear() );
+                </script> 
+            </p>
+        </section>
+    </footer>
+    
+    <script src="package/js/swiper.min.js"></script>
+
+    <script>
+        const nav = document.getElementById('nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                nav.classList.add('nav-black')
+            } else {
+                nav.classList.remove('nav-black');
+            }
+        })
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 15,
+            slidesPerGroup: 2,
+            breakpoints: {
+                // when window width is >= 1px
+                1: {
+                    slidesPerView: 1,
+                    spaceBetween: 2,
+                    slidesPerGroup: 1,
+                },
+
+                // when window width is >= 375px
+                375: {
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                    slidesPerGroup: 2,
+                },
+                // when window width is >= 575px
+                575: {
+                    slidesPerView: 3,
+                    spaceBetween: 7,
+                    slidesPerGroup: 2,
+                },
+                // when window width is >= 800px
+                800: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                    slidesPerGroup: 2,
+                },
+                // when window width is >= 1280px
+                1280: {
+                    slidesPerView: 5,
+                    spaceBetween: 15,
+                    slidesPerGroup: 2,
+                },
+                // when window width is >= 1600px
+                1600: {
+                    slidesPerView: 6,
+                    spaceBetween: 15,
+                    slidesPerGroup: 2,
+                }
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from fcaspirro.github.io/clone-netflix/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 May 2024 03:39:41 GMT -->
+</html>
